@@ -78,12 +78,13 @@
             document.getElementsByTagName('head')[0].appendChild(meta);
             container.className = "unity-mobile";
 
-            // To lower canvas resolution on mobile devices to gain some
-            // performance, uncomment the following line:
             config.devicePixelRatio = 1;
 
-            canvas.style.width = window.innerWidth + 'px';
-            canvas.style.height = window.innerHeight + 'px';
+            canvas.style.width = 100%;
+            canvas.style.height = 100%;
+
+            //canvas.style.width = window.innerWidth + 'px';
+            //canvas.style.height = window.innerHeight + 'px';
 
             unityShowBanner('Permite la rotación automática o selecciona [Ignorar Rotación] ');
         } else {
